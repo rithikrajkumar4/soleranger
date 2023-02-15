@@ -31,6 +31,11 @@ const productSchema = new mongoose.Schema({
         maxLength:[4,"max 9999"],
         default:1
     },
+    user:{
+        type:mongoose.Schema.ObjectId,
+        ref:"User",
+        required:true
+    },
     createdAt:{
         type:Date,
         default:Date.now,

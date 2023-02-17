@@ -24,18 +24,6 @@ const userSchema = new mongoose.Schema({
         minLength:[8,"Password should be more than 8 characters"],
         select:false
     },
-    //can cause error
-    // phonenumber:{
-    //     type:String,
-    //     required:true,
-    //     validate:[validator.isMobilePhone,"Please Enter a valid Phone no."]
-
-    // },
-    address:{
-        type:String,
-        // required:true,
-        default:"Not Entered"
-    },
     createdAt:{
         type:Date,
         default:Date.now,
